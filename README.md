@@ -1,28 +1,40 @@
 # 🎓 Placement Intelligence System
 
-An AI-powered student placement prediction system built with Python, Scikit-learn, and Streamlit. Predicts placement likelihood, estimates salary range, and delivers personalized career recommendations.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
+![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-orange)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![GitHub stars](https://img.shields.io/github/stars/saswati-404/placement-intelligence-system?style=social)
+
+---
+
+## 🚀 Overview
+
+An AI-powered system that predicts student placement probability and provides personalized recommendations to improve employability.
+Built using Machine Learning and deployed as an interactive Streamlit dashboard.
 
 ---
 
 ## ✨ Features
 
-- **Placement Prediction** — ML model trained on 500 student records (85% accuracy)
-- **Probability Score** — Confidence percentage for placement outcome
-- **Smart Recommendations** — 7-factor personalized action plan
-- **EDA Dashboard** — 6 interactive visualizations with key insights
-- **Feature Importance** — Understand what actually drives placements
+* 🔮 **Placement Prediction** — ML model trained on 500 student records (~85% accuracy)
+* 📊 **Confidence Gauge** — Visual placement probability using a speedometer-style meter
+* 💡 **Smart Recommendations** — Personalized suggestions based on profile weaknesses
+* 📈 **EDA Dashboard** — Visual insights into placement trends
+* 🧠 **Feature Importance** — Identifies key drivers like CGPA, internships, and skills
+* ⚡ **Real-time Predictions** — Instant feedback via Streamlit
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Tools |
-|-------|-------|
-| Data  | Pandas, NumPy |
-| ML    | Scikit-learn (Logistic Regression, Random Forest) |
-| Viz   | Matplotlib, Seaborn |
-| App   | Streamlit |
-| Save  | Joblib |
+| Layer         | Tools                                             |
+| ------------- | ------------------------------------------------- |
+| Data          | Pandas, NumPy                                     |
+| ML            | Scikit-learn (Logistic Regression, Random Forest) |
+| Visualization | Matplotlib, Seaborn, Plotly                       |
+| App           | Streamlit                                         |
+| Model Storage | Joblib                                            |
 
 ---
 
@@ -31,25 +43,23 @@ An AI-powered student placement prediction system built with Python, Scikit-lear
 ```
 placement-intelligence-system/
 │
-├── data/
-│   ├── placement_data.csv        ← Dataset (500 students)
-│   └── generate_data.py          ← Data generation script
-│
-├── notebooks/
-│   ├── eda_and_ml.py             ← EDA + ML training pipeline
-│   └── plots/                    ← Generated charts
-│       ├── eda_dashboard.png
-│       ├── correlation_heatmap.png
-│       └── feature_importance.png
-│
 ├── app/
-│   └── app.py                    ← Streamlit application
+│   └── app.py                    # Streamlit application
+│
+├── data/
+│   ├── placement_data.csv       # Dataset (500 students)
+│   └── generate_data.py         # Data generation script
 │
 ├── models/
-│   ├── placement_model.pkl       ← Trained ML model
-│   ├── scaler.pkl                ← Feature scaler
-│   ├── label_encoder.pkl         ← Encoder for stream
-│   └── features.pkl              ← Feature list
+│   ├── placement_model.pkl      # Trained ML model
+│   ├── scaler.pkl               # Feature scaler
+│   ├── label_encoder.pkl        # Encoder
+│   ├── features.pkl             # Feature list
+│   └── model_type.pkl           # Model type
+│
+├── notebooks/
+│   ├── eda_and_ml.py            # EDA + ML pipeline
+│   └── plots/                   # Generated visualizations
 │
 ├── requirements.txt
 └── README.md
@@ -57,60 +67,61 @@ placement-intelligence-system/
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run Locally
 
-### Step 1 — Clone the repo
+### 1️⃣ Clone the repository
+
 ```bash
-git clone https://github.com/YOUR_USERNAME/placement-intelligence-system.git
+git clone https://github.com/saswati-404/placement-intelligence-system.git
 cd placement-intelligence-system
 ```
 
-### Step 2 — Install dependencies
+### 2️⃣ Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 3 — Generate dataset & train models
-```bash
-cd data
-python generate_data.py
-cd ../notebooks
-python eda_and_ml.py
-```
+### 3️⃣ Run the Streamlit app
 
-### Step 4 — Launch the app
 ```bash
-cd ../app
+cd app
 streamlit run app.py
 ```
 
-Open your browser at `http://localhost:8501`
+Open your browser at: **http://localhost:8501**
 
 ---
 
 ## 📊 Model Performance
 
-| Model | Accuracy |
-|-------|----------|
+| Model               | Accuracy  |
+| ------------------- | --------- |
 | Logistic Regression | **85%** ✅ |
-| Random Forest | 82% |
+| Random Forest       | 82%       |
 
 ---
 
 ## 🔑 Key Insights
 
-- Placed students have avg CGPA of **7.46** vs **6.67** for non-placed
-- Students with 2+ internships have **91.9%** placement rate vs **39.4%** with none
-- Backlogs significantly reduce placement chances
+* 📊 CGPA plays a major role (Placed avg: **7.46**, Not placed: **6.67**)
+* 💼 Internships drastically improve outcomes (**91.9% vs 39.4%**)
+* 📉 Backlogs negatively impact placement probability
+* 🧠 Skills score significantly influences placement outcomes
 
 ---
 
-## 💼 Resume Line
+## 🎯 Impact
 
-> Developed a Placement Intelligence System using Python, Pandas, and Scikit-learn to analyze student data and predict placement outcomes with 85% accuracy. Built an interactive Streamlit dashboard with personalized career recommendations based on 8 student performance features.
+This system helps students:
+
+* Understand their placement readiness
+* Identify weak areas
+* Take targeted actions to improve their chances
 
 ---
 
 ## 👤 Author
 
-Built as a data science portfolio project.
+**Saswati Mishra**
+B.Tech Student | Data Analytics & Machine Learning Enthusiast
